@@ -1,36 +1,20 @@
-/*
-aritmethic expression is a combination of..
-operands (values, variables, etc.)
-operators (+ - * / %)
-that can be evaluated to a value
-example. y - x +5;
-*/
+// how to accept user input
+//make sure to have <script src="index.js"></script> inside your html code
 
-let students = 50;
+//EASY WAY With a window prompt
 
-//let students = + 1;
-//let students = - 1;
-///let students = * 2;
-//let students = / 2;
-//let extraStudents = students % 2;
+//let username = window.prompt("What's your name?");
+//console.log(username);
 
 
-//augmented assigned operators
 
-//students += 1;
-//students -= 1;
-//students *= 2;
-//students /= 2;
+// DIFFICULT WAY HTML textbox
 
-console.log(students);
 
-/*
-    operator precendence
-    1. parenthesis
-    2. exponents
-    3. multiplication & division
-    4. addition &subtraction
-*/
+let username;
+document.getElementById("myButton").onclick = function(){
+ username = document.getElementById("myText").value
+ console.log(username);
+ document.getElementById("myLabel").innerHTML = "Hello " + username;
+}
 
-let result = 1 + 2 * (3 + 4);
-console.log (result);
