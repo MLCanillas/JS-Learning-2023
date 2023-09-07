@@ -1,16 +1,17 @@
-let count = 0;
+// random number generator 
 
-document.getElementById("decreaseBtn").onclick = function(){
-    count-=1;
-    document.getElementById("countLabel").innerHTML = count;
-}
+let x;
+let y;
+let z;
 
-document.getElementById("resetBtn").onclick = function(){
-    count=0;
-    document.getElementById("countLabel").innerHTML = count;
-}
+document.getElementById("rollbutton").onclick = function(){
 
-document.getElementById("increaseBtn").onclick = function(){
-    count+=1;
-    document.getElementById("countLabel").innerHTML = count;
+     x = Math.floor(Math.random() * 6) + 1;
+     y = Math.floor(Math.random() * 6) + 1;
+     z = Math.floor(Math.random() * 6) + 1;
+
+     document.getElementById("xlabel").innerHTML = x;
+     document.getElementById("ylabel").innerHTML = y;
+     document.getElementById("zlabel").innerHTML = z;
+
 }
