@@ -1,21 +1,34 @@
-// var Math: Math
-//An intrinsic object that provides basic mathematics functionality and constants.
+//hypotenuse calc practice program
 
-let x;
-let y = 5;
-let z = 9;
-let maximum;
-let minimum;
 
-//x = Math.round(x);
-//x = Math.floor(x);
-//x = Math.ceil(x);
-//x = Math.pow(x);
-//x = Math.sqrt(x);
-//x = Math.abs(x);
+/*let a;
+let b;
+let c;
 
-//maximum = Math.max(x, y,z);
-//minimum = Math.min(x, y,z);
-x = Math.PI;
+a = window.prompt("Enter side A");
+a = Number(a);
 
-console.log(x);
+b = window.prompt("Enter side B");
+b = Number(b);
+
+c = Math.sqrt(Math.pow (a, 2) + Math.pow (b, 2));
+
+console.log("Side C: ", c);
+
+*/
+
+document.getElementById("submitButton").onclick = function(){
+    let a;
+let b;
+let c;
+
+a = document.getElementById("aTextbox").value;
+a = Number(a);
+
+b = document.getElementById("bTextbox").value;
+b = Number(b);
+
+c = Math.sqrt(Math.pow (a, 2) + Math.pow (b, 2));
+
+document.getElementById("cLabel").innerHTML = "Side C: " + c;
+}
