@@ -1,17 +1,17 @@
-// random number generator 
+//useful string properties & methods
 
-let x;
-let y;
-let z;
+let username = "   Migz   ";
+let phoneNumber = " 0956-572-6634";
 
-document.getElementById("rollbutton").onclick = function(){
+//console.log(username.length);
+//console.log(username.charAt(0));
+//console.log(username.indexOf("o"));
+//console.log(username.lastIndexOf("o"));
 
-     x = Math.floor(Math.random() * 6) + 1;
-     y = Math.floor(Math.random() * 6) + 1;
-     z = Math.floor(Math.random() * 6) + 1;
+//username = username.trim();
+//username = username.toUpperCase();
+//username = username.toLowerCase();
 
-     document.getElementById("xlabel").innerHTML = x;
-     document.getElementById("ylabel").innerHTML = y;
-     document.getElementById("zlabel").innerHTML = z;
+phoneNumber = phoneNumber.replaceAll("-","/");
 
-}
+console.log(phoneNumber);
