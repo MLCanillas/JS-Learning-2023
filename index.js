@@ -1,17 +1,15 @@
-//useful string properties & methods
+//      slices() extracts a selection of a string and 
+//      returns it as a new string without modifying the original string
 
-let username = "   Migz   ";
-let phoneNumber = " 0956-572-6634";
+let fullName = "Snoop Dog";
+let firstName;
+let lastName;
 
-//console.log(username.length);
-//console.log(username.charAt(0));
-//console.log(username.indexOf("o"));
-//console.log(username.lastIndexOf("o"));
+//firstName = fullName.slice(0, 3);
+//lastName = fullName.slice(4);
 
-//username = username.trim();
-//username = username.toUpperCase();
-//username = username.toLowerCase();
+firstName = fullName.slice(0, fullName.indexOf(" "));
+lastName = fullName.slice(fullName.indexOf(" ") + 1 );
 
-phoneNumber = phoneNumber.replaceAll("-","/");
-
-console.log(phoneNumber);
+console.log(firstName);
+console.log(lastName);
