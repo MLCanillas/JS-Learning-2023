@@ -1,15 +1,8 @@
-//      slices() extracts a selection of a string and 
-//      returns it as a new string without modifying the original string
+// method chaining - calling one method after another 
+// in one continuous line of code
 
-let fullName = "Snoop Dog";
-let firstName;
-let lastName;
+let userName = "migz";
 
-//firstName = fullName.slice(0, 3);
-//lastName = fullName.slice(4);
+let letter = userName.charAt(0).toUpperCase().trim();
 
-firstName = fullName.slice(0, fullName.indexOf(" "));
-lastName = fullName.slice(fullName.indexOf(" ") + 1 );
-
-console.log(firstName);
-console.log(lastName);
+console.log(letter);
