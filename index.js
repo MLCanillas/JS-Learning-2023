@@ -1,8 +1,26 @@
-// method chaining - calling one method after another 
-// in one continuous line of code
+// if statement = a basic for mof decision making
+//                if a condition is true, then do something
+//                if not, then don't do it.
 
-let userName = "migz";
+/*
+let age = 56;
 
-let letter = userName.charAt(0).toUpperCase().trim();
+if(age >= 65){
+    console.log("you are a senior citizen!");
+}
+else if(age >= 18){
+    console.log("You are an adult!");
+}
+else{ 
+    console.log("You are a child!");
+}
+*/
 
-console.log(letter);
+let online = true;
+
+if(online){
+    console.log("You are online!");
+}
+else{
+    console.log("You are offline!");
+}
