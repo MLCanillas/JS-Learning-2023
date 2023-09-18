@@ -1,26 +1,30 @@
-// if statement = a basic for mof decision making
-//                if a condition is true, then do something
-//                if not, then don't do it.
+document.getElementById("myButton").onclick = function(){
 
-/*
-let age = 56;
+    const myCheckBox = document.getElementById("myCheckBox");
+    const visaBtn = document.getElementById("visaBtn");
+    const mastercardBtn = document.getElementById("mastercardBtn");
+    const paypalBtn = document.getElementById("paypalBtn");
 
-if(age >= 65){
-    console.log("you are a senior citizen!");
-}
-else if(age >= 18){
-    console.log("You are an adult!");
-}
-else{ 
-    console.log("You are a child!");
-}
-*/
+    if(myCheckBox.checked){
+        console.log("You are subscribed!");
+    }
+    else{
+        console.log("You are NOT subscribed!");
+    }
 
-let online = true;
+    if(visaBtn.checked){
+        console.log("You are paying with a Visa!");
+    }
 
-if(online){
-    console.log("You are online!");
-}
-else{
-    console.log("You are offline!");
+    else if(mastercardBtn.checked){
+        console.log("You are paying with a Mastercard!");
+    }
+
+    else if(paypalBtn.checked){
+        console.log("You are paying with a PayPal!");
+    }
+
+    else{
+        console.log("you must select a payment type!");
+    }
 }
