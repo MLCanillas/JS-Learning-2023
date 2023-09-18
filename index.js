@@ -1,30 +1,30 @@
-document.getElementById("myButton").onclick = function(){
+// switch = statement that examines a value
+// for a match againts many case clauses.
+// more efficient that many "else if" statements.
 
-    const myCheckBox = document.getElementById("myCheckBox");
-    const visaBtn = document.getElementById("visaBtn");
-    const mastercardBtn = document.getElementById("mastercardBtn");
-    const paypalBtn = document.getElementById("paypalBtn");
+let grade = "pizza";
 
-    if(myCheckBox.checked){
-        console.log("You are subscribed!");
-    }
-    else{
-        console.log("You are NOT subscribed!");
-    }
+switch(grade){
+case "A":
+    console.log("You did great!");
+    break;
 
-    if(visaBtn.checked){
-        console.log("You are paying with a Visa!");
-    }
+case "B":
+    console.log("You did good!");
+    break;
 
-    else if(mastercardBtn.checked){
-        console.log("You are paying with a Mastercard!");
-    }
+case "C":
+    console.log("You did okay!");
+    break;
 
-    else if(paypalBtn.checked){
-        console.log("You are paying with a PayPal!");
-    }
+case "D":
+    console.log("You passed ... barely");
+    break;
 
-    else{
-        console.log("you must select a payment type!");
-    }
+case "F":
+    console.log("You FAILED!");
+    break;
+default:
+    console.log(grade, "Is not a letter grade!");
+
 }
